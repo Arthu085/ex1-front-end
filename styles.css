@@ -35,6 +35,10 @@
     float: left;
     clear: both;
     margin-left: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .messages-cliente  {
@@ -42,16 +46,9 @@
     float: right;
     clear: both;
     margin-right: 15px;
-}
-
-.user-input {
     display: flex;
-    margin-top: 10px;
-}
-
-#messageInput {
-    flex-grow: 1;
-    padding: 5px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .title {
@@ -60,3 +57,37 @@
     font-size: 180%;
 }
 
+.send {
+    font-weight: bold;
+}
+
+.user-input {
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#messageInput {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: 1px solid #000;
+    padding: 10px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+    border: 2px solid #000;
+}
